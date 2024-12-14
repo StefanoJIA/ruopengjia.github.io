@@ -34,6 +34,35 @@
         .scrolly {
             margin-top: 1.5em;
         }
+
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5em;
+        }
+
+        .news-item {
+            background: #f4f4f4;
+            padding: 1.5em;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .news-item h3 {
+            font-size: 1.2em;
+            margin-bottom: 0.5em;
+        }
+
+        .news-item p {
+            font-size: 0.9em;
+        }
+
+        .news-item a {
+            color: #007acc;
+            text-decoration: none;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body class="is-preload">
@@ -75,48 +104,43 @@
         <div id="main">
 
             <!-- About My Work -->
-            <article class="post featured">
+            <section>
                 <header class="major">
-                    <h2>About My Work</h2>
-                    <p>
-                        My research journey spans gravitational wave data analysis, quantum optics, and astronomical instrumentation. 
-                        I have contributed to projects at MIT Kavli Institute and Northeastern University, specializing in photon encoding, operable ring resonator arrays, and real-time astrophysical data analysis.<br /><br />
-                        My current interests include AGN co-evolution, large-scale cosmic structures, and high-precision observational methods in astronomy.
-                    </p>
+                    <h2>About Me</h2>
                 </header>
-                <a href="about.html" class="image main"><img src="images/about_work.jpg" alt="About Work" /></a>
-                <ul class="actions special">
-                    <li><a href="about.html" class="button large">Learn More</a></li>
-                </ul>
-            </article>
+                <p>
+                    I am a Master's graduate in Electrical and Computer Engineering from Northeastern University, specializing in Electromagnetics, Plasma, and Optics. My current research focuses on advanced quantum optics, gravitational wave data analysis, and high-precision astronomical instrumentation. I am passionate about bridging engineering and astronomy to address the universe's most profound questions.
+                </p>
+                <p>
+                    At Northeastern University, I completed my thesis on "Engineering Supermodes of Coupled Resonator Arrays" and contributed to the LIGO-AMPLFI project at MIT, advancing real-time gravitational wave data analysis techniques. My earlier experiences include collaborations on the "Weighing the Galaxy with 21cm Hydrogen Lines" project at Princeton and working on optical instrument manufacturing in China. These efforts reflect my dedication to combining computational methods with astrophysical exploration.
+                </p>
+                <p>
+                    Beyond academics, I am an avid reader with interests in social science and history, a soccer enthusiast with over 15 years of playing experience, and a calligraphy practitioner sharing Chinese cultural heritage. 
+                </p>
+            </section>
 
             <!-- News -->
-            <section class="posts">
+            <section>
                 <header class="major">
                     <h2>Recent News</h2>
                 </header>
-                <article>
-                    <header>
-                        <span class="date">October 2024</span>
-                        <h2><a href="news.html">Presented at MIT Physics Symposium</a></h2>
-                    </header>
-                    <a href="news.html" class="image fit"><img src="images/news1.jpg" alt="MIT Symposium" /></a>
-                    <p>Shared my findings on quantum optics and machine learning applications in astrophysics.</p>
-                    <ul class="actions special">
-                        <li><a href="news.html" class="button">Read More</a></li>
-                    </ul>
-                </article>
-                <article>
-                    <header>
-                        <span class="date">September 2024</span>
-                        <h2><a href="news.html">Completed a Key Project on Gravitational Waves</a></h2>
-                    </header>
-                    <a href="news.html" class="image fit"><img src="images/news2.jpg" alt="Gravitational Waves" /></a>
-                    <p>Developed advanced techniques for real-time analysis of astrophysical merger events.</p>
-                    <ul class="actions special">
-                        <li><a href="news.html" class="button">Read More</a></li>
-                    </ul>
-                </article>
+                <div class="news-grid">
+                    <div class="news-item">
+                        <h3>November 2024</h3>
+                        <p>Presented calligraphy series of a classic Chinese TV series</p>
+                        <a href="news.html">Read more</a>
+                    </div>
+                    <div class="news-item">
+                        <h3>August 2024</h3>
+                        <p>Started working with LIGO-AMPLFI team at MIT</p>
+                        <a href="news.html">Read more</a>
+                    </div>
+                    <div class="news-item">
+                        <h3>May 2024</h3>
+                        <p>Completed defense of Master's Thesis 'Engineering supermodes of coupled resonator arrays'</p>
+                        <a href="news.html">Read more</a>
+                    </div>
+                </div>
             </section>
 
         </div>

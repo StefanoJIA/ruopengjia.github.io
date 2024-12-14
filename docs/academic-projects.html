@@ -6,6 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+        .project-section {
+            margin: 2em 0;
+        }
+
+        .project-section h2 {
+            font-size: 1.75em;
+            font-weight: bold;
+            margin-bottom: 0.5em;
+            text-transform: capitalize;
+            color: #444;
+        }
+
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .project-header h3 {
+            font-size: 1.25em;
+            font-weight: bold;
+            margin: 0.5em 0;
+            color: #555;
+        }
+
+        .project-header span {
+            font-size: 1em;
+            color: #777;
+        }
+
+        .project-section ul {
+            list-style-type: disc;
+            margin-left: 1.5em;
+        }
+
+        .project-section ul li {
+            margin: 0.5em 0;
+            line-height: 1.6;
+        }
+
+        .project-section p {
+            margin-bottom: 1em;
+        }
+    </style>
 </head>
 <body class="is-preload">
 
@@ -33,61 +78,84 @@
             <article class="post">
                 <header class="major">
                     <h1>Academic Projects</h1>
-                    <p>A comprehensive overview of my research projects across astrophysics, quantum optics, and engineering.</p>
+                    <p>A comprehensive overview of my research projects spanning astrophysics, quantum optics, and engineering.</p>
                 </header>
 
-                <section>
-                    <header>
-                        <h2>Gravitational Wave Astronomy - AMPLFI Project (MIT)</h2>
-                    </header>
-                    <p>As a researcher at MIT, I worked on the AMPLFI project focusing on gravitational wave detection. My contributions included:</p>
+                <!-- AMPLFI Project -->
+                <section class="project-section">
+                    <h2>Gravitational Wave Astronomy</h2>
+                    <div class="project-header">
+                        <h3>Massachusetts Institute of Technology</h3>
+                        <span>2021</span>
+                    </div>
+                    <p>As a researcher at MIT, I collaborated on the AMPLFI project, focusing on advanced gravitational wave data processing and real-time analysis:</p>
                     <ul>
-                        <li>Benchmarking multiple waveform generation models such as <strong>IMRPhenomD</strong>, optimizing detection efficiency by reducing overfitting and computation waste by 40%.</li>
-                        <li>Designing a data resampling strategy, improving data processing throughput by threefold in large-scale datasets.</li>
-                        <li>Enhancing machine learning models for gravitational wave merger event fitting, achieving an 80% improvement in detection accuracy.</li>
-                        <li>Contributing to real-time parameter estimation for gravitational wave sources.</li>
+                        <li>Benchmarked waveform generation models such as IMRPhenomD, reducing overfitting by 40%.</li>
+                        <li>Designed a data resampling strategy, increasing efficiency threefold in large-scale datasets.</li>
+                        <li>Optimized machine learning algorithms for parameter estimation, reducing runtime by 83%.</li>
+                        <li>Developed preprocessing modules for real-time detection of astrophysical merger events.</li>
                     </ul>
-                    <p>This project emphasized cutting-edge computational astrophysics, focusing on robust data analysis and AI-assisted methods.</p>
                 </section>
 
-                <section>
-                    <header>
-                        <h2>21 cm Radio Astronomy - Princeton University</h2>
-                    </header>
-                    <p>During my undergraduate research at Princeton, I explored the rotational dynamics of the Milky Way and dark matter distribution. Key achievements include:</p>
+                <!-- Caltech LIGO Project -->
+                <section class="project-section">
+                    <h2>Gravitational Wave Data Analysis</h2>
+                    <div class="project-header">
+                        <h3>California Institute of Technology</h3>
+                        <span>2021</span>
+                    </div>
+                    <p>During my summer research at Caltech, I worked on the LIGO project to analyze gravitational wave signals using Bayesian inference:</p>
                     <ul>
-                        <li>Analyzed GLON sky survey data to map the Galactic differential rotation model with a precision of 1,000 light-year scales.</li>
-                        <li>Published results confirming the presence of a dark matter halo at the Galaxy’s edge in the <em>Journal of Physics: Conference Series (2287 012038)</em>.</li>
-                        <li>Used advanced spectral decomposition techniques to identify the gravitational influence of dark matter.</li>
+                        <li>Developed and fine-tuned LIGO data pipelines for merger event detection.</li>
+                        <li>Innovated a data-fitting method using the Gravitational Wave Template Bank.</li>
+                        <li>Detected over 50 potential black hole and neutron star merger events.</li>
+                        <li>Explored frequency-domain transformations to enhance signal clarity.</li>
                     </ul>
-                    <p>This work bridged observational radio astronomy and theoretical astrophysics, advancing our understanding of galactic structure.</p>
                 </section>
 
-                <section>
-                    <header>
-                        <h2>Greenhouse Monitoring and Control System - Capstone Project</h2>
-                    </header>
-                    <p>As part of my undergraduate capstone at Northern Arizona University, I led the design and development of an automated greenhouse monitoring system. Highlights include:</p>
+                <!-- 21 cm Radio Astronomy -->
+                <section class="project-section">
+                    <h2>21 cm Radio Astronomy</h2>
+                    <div class="project-header">
+                        <h3>Princeton University</h3>
+                        <span>2021</span>
+                    </div>
+                    <p>At Princeton, I investigated the Milky Way's rotational dynamics and dark matter distribution:</p>
                     <ul>
-                        <li>Developed hardware modules to monitor environmental factors like temperature, humidity, and light.</li>
-                        <li>Implemented an <strong>automated control system</strong> using microcontrollers to regulate ventilation, lighting, and irrigation.</li>
-                        <li>Conducted extensive testing under various conditions, ensuring system reliability and scalability.</li>
-                        <li>Managed team coordination and task delegation, ensuring project completion within deadlines.</li>
+                        <li>Mapped the Galactic differential rotation model at 1,000 light-year scales using GLON survey data.</li>
+                        <li>Published findings in the <em>Journal of Physics: Conference Series (2287 012038)</em>, confirming the existence of a dark matter halo.</li>
+                        <li>Utilized spectral decomposition techniques to examine gravitational influences.</li>
                     </ul>
-                    <p>This experience enhanced my skills in embedded systems, IoT applications, and project management.</p>
                 </section>
 
-                <section>
-                    <header>
-                        <h2>Quantum Key Distribution Systems - QuantumCTek</h2>
-                    </header>
-                    <p>At QuantumCTek, I contributed to the development of next-generation quantum encryption systems. My responsibilities included:</p>
+                <!-- Capstone Design -->
+                <section class="project-section">
+                    <h2>Greenhouse Monitoring and Control System</h2>
+                    <div class="project-header">
+                        <h3>Northern Arizona University</h3>
+                        <span>2022</span>
+                    </div>
+                    <p>For my capstone project, I led the design and implementation of an IoT-based greenhouse system:</p>
                     <ul>
-                        <li>Developing photon-encoded quantum communication protocols for enhanced security in data transmission.</li>
-                        <li>Optimizing quantum key distribution (QKD) systems to ensure real-world scalability and reliability.</li>
-                        <li>Participating in cross-functional teams to integrate QKD technologies into practical networking environments.</li>
+                        <li>Designed hardware modules to monitor environmental factors such as temperature, humidity, and light levels.</li>
+                        <li>Developed an automated control system using Arduino and PostgreSQL.</li>
+                        <li>Ensured system reliability through rigorous testing and iterative improvements.</li>
                     </ul>
-                    <p>This role underscored my expertise in quantum optics and secure communication technologies.</p>
+                </section>
+
+                <!-- Quantum Key Distribution -->
+                <section class="project-section">
+                    <h2>Quantum Key Distribution Systems</h2>
+                    <div class="project-header">
+                        <h3>QuantumCTek</h3>
+                        <span>2021 - 2022</span>
+                    </div>
+                    <p>At QuantumCTek, I contributed to the development of advanced quantum communication technologies:</p>
+                    <ul>
+                        <li>Implemented BB84 and E91 QKD protocols for real-world quantum encryption systems.</li>
+                        <li>Developed photon-encoded communication schemes to enhance security in data transmission.</li>
+                        <li>Participated in cross-functional teams to integrate QKD into networking environments.</li>
+                    </ul>
                 </section>
 
             </article>
