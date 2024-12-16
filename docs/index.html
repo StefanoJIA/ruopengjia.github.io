@@ -4,6 +4,7 @@
     <title>Ruopeng Jia - Personal Portfolio</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     <style>
@@ -63,6 +64,30 @@
             text-decoration: none;
             font-weight: bold;
         }
+
+        /* Fade-in zoom animation */
+        @keyframes fadeInZoom {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .featured-image {
+            text-align: center;
+            animation: fadeInZoom 2s ease-out;
+            margin: 2em 0;
+        }
+
+        .featured-image img {
+            max-width: 80%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
     </style>
 </head>
 <body class="is-preload">
@@ -106,7 +131,7 @@
             <!-- About My Work -->
             <section>
                 <header class="major">
-                    <h2>About Me</h2>
+                    <h2>Ruopeng JIA</h2>
                 </header>
                 <p>
                     I am a Master's graduate in Electrical and Computer Engineering from Northeastern University, specializing in Electromagnetics, Plasma, and Optics. My current research focuses on advanced quantum optics, gravitational wave data analysis, and high-precision astronomical instrumentation. I am passionate about bridging engineering and astronomy to address the universe's most profound questions.
@@ -117,6 +142,16 @@
                 <p>
                     Beyond academics, I am an avid reader with interests in social science and history, a soccer enthusiast with over 15 years of playing experience, and a calligraphy practitioner sharing Chinese cultural heritage. 
                 </p>
+            </section>
+
+            <!-- Featured Image -->
+            <section>
+                <div class="featured-image">
+                    <img src="images/Dissertation.jpg" alt="Ruopeng Jia Presentation">
+                    <figcaption style="text-align: center; font-size: 1em; color: #666; margin-top: 0.5em;">
+                        Ruopeng Jia presenting works during the Master's Thesis Defense.
+                    </figcaption>
+                </div>
             </section>
 
             <!-- News -->
