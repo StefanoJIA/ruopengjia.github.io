@@ -1,169 +1,54 @@
-<!DOCTYPE HTML>
-<html>
-    <head>
-        <title>Gallery - Ruopeng Jia</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="assets/css/main.css" />
-        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-        <style>
-            /* Top navigation for sections */
-            .section-nav {
-                display: flex;
-                justify-content: center;
-                gap: 1em;
-                margin: 1.5em 0;
-            }
-    
-            .section-nav a {
-                text-decoration: none;
-                color: #444;
-                padding: 0.5em 1em;
-                border: 1px solid #ccc;
-                border-radius: 5px;
-                font-size: 1em;
-                transition: background-color 0.3s, color 0.3s;
-            }
-    
-            .section-nav a:hover {
-                background-color: #444;
-                color: #fff;
-            }
-    
-            .section-header {
-                margin-top: 2em;
-                font-size: 1.75em;
-                font-weight: bold;
-                text-align: center; /* 标题居中 */
-                color: #444;
-            }
-    
-            .gallery-section {
-                margin: 2em 0;
-            }
-    
-            .gallery-grid {
-                display: grid;
-                grid-template-columns: repeat(4, 1fr); /* 每行四个项目 */
-                gap: 1em;
-            }
-    
-            .gallery-grid .item {
-                border: 1px solid #ddd;
-                border-radius: 8px;
-                overflow: hidden;
-                text-align: center;
-                background: #f9f9f9;
-                transition: transform 0.3s, box-shadow 0.3s;
-            }
-    
-            .gallery-grid .item:hover {
-                transform: translateY(-5px);
-                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-            }
-    
-            .gallery-grid .item img {
-                width: 100%;
-                height: auto;
-            }
-    
-            .gallery-grid .item a {
-                display: block;
-                padding: 0.5em;
-                font-size: 0.9em;
-                color: #444;
-                text-decoration: none;
-                transition: color 0.3s;
-            }
-    
-            .gallery-grid .item a:hover {
-                color: #007bff;
-            }
-        </style>
-    </head>
-    <body class="is-preload">
-
-    <!-- Wrapper -->
-    <div id="wrapper">
-
-        <!-- Header -->
-        <header id="header">
-            <a href="index.html" class="logo">Ruopeng Jia</a>
-        </header>
-
-        <!-- Nav -->
-        <nav id="nav">
-            <ul class="links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="academic-projects.html">Academic Projects</a></li>
-                <li><a href="news.html">News</a></li>
-                <li class="active"><a href="gallery.html">Gallery</a></li>
-            </ul>
-        </nav>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ruopeng Jia’s reading, classical music, calligraphy, and other personal interests.">
+  <title>Gallery | Ruopeng Jia</title>
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="assets/css/portfolio.css?v=20261107">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="masthead">
+    <div class="shell masthead-inner">
+      <a class="identity" href="index.html"><span class="monogram" aria-hidden="true">RJ</span> Ruopeng Jia</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="academic-projects.html">Academic Projects</a>
+        <a href="news.html">News</a>
+        <a href="gallery.html" aria-current="page">Gallery</a>
+      </nav>
+    </div>
+  </header>
+  <main class="shell site-page" id="main">
+<article class="post">
+                <header class="page-intro">
+                    <p class="eyebrow">Personal / Outside the lab</p>
+                    <h1>Gallery</h1>
+                    <p>Books, classical recordings, Chinese calligraphy, and a few other interests I return to outside engineering.</p>
+                </header>
 
         <!-- Section Navigation -->
-        <div class="section-nav">
+        <nav class="jump-links" aria-label="Gallery sections">
             <a href="#calligraphy">Calligraphy</a>
             <a href="#sports">Sports</a>
             <a href="#reading">Reading</a>
             <a href="#music">Classical Music</a>
             <a href="#style">Personal Style</a>
-        </div>
-
-        <!-- Main -->
-        <div id="main">
-            <article class="post">
-                <header class="major">
-                    <h1>Gallery</h1>
-                    <p>A visual journey into my passions, interests, and inspirations.</p>
-                </header>
+        </nav>
 
                 <!-- Section: Calligraphy -->
                 <div id="calligraphy" class="gallery-section">
                     <h2 class="section-header">Calligraphy</h2>
-                    <div class="gallery-grid">
-                        <div class="item">
-                            <img src="assets/images/calligraphy1.jpg" alt="Calligraphy 1">
-                            <a href="calligraphy.html">Explore My Calligraphy</a>
-                        </div>
-                        <div class="item">
-                            <img src="assets/images/calligraphy2.jpg" alt="Calligraphy 2">
-                            <a href="calligraphy.html">See More</a>
-                        </div>
-                        <div class="item">
-                            <img src="assets/images/calligraphy3.jpg" alt="Calligraphy 3">
-                            <a href="calligraphy.html">Artistic Insights</a>
-                        </div>
-                        <div class="item">
-                            <img src="assets/images/calligraphy4.jpg" alt="Calligraphy 4">
-                            <a href="calligraphy.html">Discover More</a>
-                        </div>
-                    </div>
+                    <p>I practice Chinese calligraphy as a way to stay connected to language and cultural heritage. One of my past series drew inspiration from a classic Chinese television series.</p>
                 </div>
 
                 <!-- Section: Sports -->
                 <div id="sports" class="gallery-section">
                     <h2 class="section-header">Sports</h2>
-                    <div class="gallery-grid">
-                        <div class="item">
-                            <img src="assets/images/sports1.jpg" alt="Soccer">
-                            <a href="sports.html">My Passion for Soccer</a>
-                        </div>
-                        <div class="item">
-                            <img src="assets/images/sports2.jpg" alt="Gym">
-                            <a href="sports.html">Fitness and Sports</a>
-                        </div>
-                        <div class="item">
-                            <img src="assets/images/sports3.jpg" alt="Hiking">
-                            <a href="sports.html">Other Sports</a>
-                        </div>
-                        <div class="item">
-                            <img src="assets/images/sports4.jpg" alt="kinesiology">
-                            <a href="sports.html">Outdoor Adventures</a>
-                        </div>
-                    </div>
+                    <p>Soccer has been part of my life for years. It is a welcome change of pace from research and engineering.</p>
                 </div>
 
                 <!-- Section: Reading -->
@@ -172,19 +57,19 @@
                     <div class="gallery-grid">
                         <div class="item">
                             <img src="gallery/reading/Mingxuanyixian.jpg" alt="命悬一线 我不放手">
-                            <a href="reading.html">Life hangs, don't let go</a>
+                            <p class="gallery-caption">Life hangs, don't let go</p>
                         </div>
                         <div class="item">
                             <img src="gallery/reading/I Left My Homework in the Hamptons.jpg" alt="I Left My Homework in the Hamptons">
-                            <a href="reading.html">I Left My Homework in the Hamptons</a>
+                            <p class="gallery-caption">I Left My Homework in the Hamptons</p>
                         </div>
                         <div class="item">
                             <img src="gallery/reading/The Address Book.jpg" alt="The Address Book">
-                            <a href="reading.html">The Address Book</a>
+                            <p class="gallery-caption">The Address Book</p>
                         </div>
                         <div class="item">
                             <img src="gallery/reading/Making Liu Che.jpg" alt="Making Liu Che">
-                            <a href="reading.html">Making Liu Che - The Emperor of Valiant</a>
+                            <p class="gallery-caption">Making Liu Che - The Emperor of Valiant</p>
                         </div>
                     </div>
                 </div>
@@ -194,7 +79,7 @@
                     <h2 class="section-header"><a href="gallery/classics/classic-musics.html">Classical Music</a></h2>
                     <div class="gallery-grid">
                         <div class="item">
-                            <img src="gallery/classics/images/schubert-symphony9-jansons.jpg" alt="Schubert: Symphony No.8">
+                            <img src="gallery/classics/images/schubert-symphony9-jansons.jpg" alt="Schubert: Symphony No. 9">
                             <a href="gallery/classics/schubert-symphony9-jansons.html">Schubert: Symphony No.9</a>
                         </div>
                         <div class="item">
@@ -216,42 +101,19 @@
                 <!-- Section: Personal Style -->
                 <div id="style" class="gallery-section">
                     <h2 class="section-header">Personal Style</h2>
-                    <div class="gallery-grid">
-                        <div class="item">
-                            <img src="assets/images/style1.jpg" alt="Style and Collection 1">
-                            <a href="style.html">Explore My Collections</a>
-                        </div>
-                        <div class="item">
-                            <img src="assets/images/style2.jpg" alt="Style and Collection 2">
-                            <a href="style.html">See More</a>
-                        </div>
-                        <div class="item">
-                            <img src="assets/images/style3.jpg" alt="Style and Collection 3">
-                            <a href="style.html">My Inspirations</a>
-                        </div>
-                        <div class="item">
-                            <img src="assets/images/style4.jpg" alt="Style and Collection 4">
-                            <a href="style.html">Learn More</a>
-                        </div>
-                    </div>
+                    <p>Personal style and collections are also part of this gallery.</p>
                 </div>
             </article>
-        </div>
-
-        <!-- Footer -->
-        <footer id="footer">
-            <section>
-                <p>&copy; 2024 Ruopeng Jia. Design by <a href="https://html5up.net">HTML5 UP</a>.</p>
-            </section>
-        </footer>
-
+  </main>
+  <footer class="footer">
+    <div class="shell footer-inner">
+      <span>© Ruopeng Jia · Original site based on <a href="https://html5up.net">HTML5 UP</a></span>
+      <div class="footer-links">
+        <a href="mailto:jia.ruop@northeastern.edu">Email</a>
+        <a href="https://github.com/StefanoJIA">GitHub</a>
+        <a href="https://www.linkedin.com/in/ruopeng-j/">LinkedIn</a>
+      </div>
     </div>
-
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/main.js"></script>
-
+  </footer>
 </body>
 </html>

@@ -1,119 +1,91 @@
-<!DOCTYPE HTML>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <title>Academic Projects - Ruopeng Jia</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-    <style>
-        .project-section {
-            margin: 2em 0;
-        }
-
-        .project-section h2 {
-            font-size: 1.75em;
-            font-weight: bold;
-            margin-bottom: 0.5em;
-            text-transform: capitalize;
-            color: #444;
-        }
-
-        .project-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-        }
-
-        .project-header h3 {
-            font-size: 1.25em;
-            font-weight: bold;
-            margin: 0.5em 0;
-            color: #555;
-        }
-
-        .project-header span {
-            font-size: 1em;
-            color: #777;
-        }
-
-        .project-section ul {
-            list-style-type: disc;
-            margin-left: 1.5em;
-        }
-
-        .project-section ul li {
-            margin: 0.5em 0;
-            line-height: 1.6;
-        }
-
-        .project-section p {
-            margin-bottom: 1em;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Photonic devices, optical measurement, FPGA inference, and other projects by Ruopeng Jia.">
+  <title>Academic projects | Ruopeng Jia</title>
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="assets/css/portfolio.css?v=20261107">
 </head>
-<body class="is-preload">
-
-    <!-- Wrapper -->
-    <div id="wrapper">
-
-        <!-- Header -->
-        <header id="header">
-            <a href="index.html" class="logo">Ruopeng Jia</a>
-        </header>
-
-        <!-- Nav -->
-        <nav id="nav">
-            <ul class="links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li class="active"><a href="academic-projects.html">Academic Projects</a></li>
-                <li><a href="news.html">News</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-            </ul>
-        </nav>
-
-        <!-- Main -->
-        <div id="main">
-            <article class="post">
-                <header class="major">
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="masthead">
+    <div class="shell masthead-inner">
+      <a class="identity" href="index.html"><span class="monogram" aria-hidden="true">RJ</span> Ruopeng Jia</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="academic-projects.html" aria-current="page">Academic Projects</a>
+        <a href="news.html">News</a>
+        <a href="gallery.html">Gallery</a>
+      </nav>
+    </div>
+  </header>
+  <main class="shell site-page" id="main">
+<article class="post">
+                <header class="page-intro">
+                    <p class="eyebrow">Research / Selected projects</p>
                     <h1>Academic Projects</h1>
-                    <p>A comprehensive overview of my research projects spanning astrophysics, quantum optics, and engineering.</p>
+                    <p>Selected work in integrated photonics, optical measurements, scientific inference, and instrumentation.</p>
                 </header>
+<nav class="jump-links" aria-label="Jump to a project">
+  <a href="#photonics">Photonics</a><a href="#cuore">CUORE / FPGA</a><a href="#amplfi">AMPLFI</a>
+  <a href="#quantum-link">Photon counting</a><a href="#rram">RRAM</a><a href="#uniongpt">Research software</a>
+</nav>
+<div class="project-list">
+
+                <section class="project-section" id="photonics">
+                    <h2>Engineering Supermodes of Coupled Resonator Arrays</h2>
+                    <div class="project-header">
+                        <h3>Northeastern University · M.S. Thesis</h3>
+                        <span>2024</span>
+                    </div>
+                    <p>I modeled coupled ring-resonator arrays and used Fourier-domain perturbations and numerical optimization to target spectral shifts while limiting changes to neighboring modes. The work explored spectral engineering for nonlinear photonic devices and compensation for resonator disorder in simulation.</p>
+                    <p><a href="https://meitner.coe.northeastern.edu/hyperkitty/list/ece-grad-phd%40newlists.coe.northeastern.edu/thread/K3HGSYA242PIGHRU2TMSQCLU63Y2W3QU/">Northeastern thesis defense announcement</a></p>
+                </section>
+
+                <section class="project-section" id="cuore">
+                    <h2>Detector Waveform Inference on FPGA</h2>
+                    <div class="project-header">
+                        <h3>Independent study · Public CUORE data</h3>
+                        <span>Ongoing</span>
+                    </div>
+                    <p>I audited 10,000 public waveform windows for exact overlap and used group-aware splits to study evaluation leakage. I also tested compact classifiers under registration shifts and fixed-point quantization.</p>
+                    <p>A 16-bit hls4ml MLP ran on an Arty A7-100T. On-board counters measured a model-core latency of 2.78 µs, and the outputs matched C simulation bit for bit across 1,350 validation events.</p>
+                    <ul class="metrics" aria-label="FPGA validation highlights"><li>16-bit fixed point</li><li>1,350 validation events</li><li>2.78 µs model core</li></ul>
+                </section>
 
                 <!-- AMPLFI Project -->
-                <section class="project-section">
-                    <h2>Multi-messager Astronomy</h2>
+                <section class="project-section" id="amplfi">
+                    <h2>Gravitational-Wave Parameter Estimation</h2>
                     <div class="project-header">
                         <h3>Massachusetts Institute of Technology</h3>
-                        <span>July, 2024 - Present</span>
+                        <span>July 2024 – January 2025</span>
                     </div>
-                    <p>As a researcher at MIT, I collaborated on the AMPLFI project, focusing on advanced gravitational wave data processing and real-time analysis:</p>
+                    <p>I collaborated on the AMPLFI project, which studies efficient inference of physical parameters from gravitational-wave signals.</p>
                     <ul>
-                        <li>Benchmarked waveform generation models such as IMRPhenomD_v2, reducing overfitting by 40%.</li>
-                        <li>Designed a data resampling strategy, increasing efficiency threefold in large-scale datasets.</li>
-                        <li>Optimized machine learning algorithms for parameter estimation, reducing runtime by 83%.</li>
-                        <li>Developed preprocessing modules for real-time detection of astrophysical merger events.</li>
+                        <li>Developed preprocessing, resampling, and parameter-constraint modules for Bilby and AMPLFI workflows.</li>
+                        <li>Evaluated trade-offs among computation, parameter constraints, and model robustness.</li>
                     </ul>
                 </section>
 
                 <!-- Quantum Key Distribution -->
-                <section class="project-section">
+                <section class="project-section" id="quantum-link">
                     <h2>Quantum Key Distribution Systems</h2>
                     <div class="project-header">
                         <h3>QuantumCTek</h3>
-                        <span>June - August, 2023</span>
+                        <span>2023</span>
                     </div>
-                    <p>At QuantumCTek, I contributed to the development of advanced quantum communication technologies:</p>
+                    <p>At QuantumCTek, I worked on calibration and measurement for a polarization-encoded quantum communication link.</p>
                     <ul>
-                        <li>Implemented BB84 and E91 QKD protocols for real-world quantum encryption systems.</li>
-                        <li>Developed photon-encoded communication schemes to enhance security in data transmission.</li>
-                        <li>Participated in cross-functional teams to integrate QKD into networking environments.</li>
+                        <li>Aligned the optics and characterized photon-counting signal and background.</li>
+                        <li>Conducted a two-kilometer outdoor link test and documented its configuration, conditions, and stability.</li>
                     </ul>
                 </section>
 
                 <!-- Capstone Design -->
-                <section class="project-section">
+                <section class="project-section" id="greenhouse">
                     <h2>Greenhouse Monitoring and Control System</h2>
                     <div class="project-header">
                         <h3>Northern Arizona University</h3>
@@ -121,60 +93,63 @@
                     </div>
                     <p>For my capstone project, I led the design and implementation of an IoT-based greenhouse system:</p>
                     <ul>
-                        <li>Designed hardware modules to monitor environmental factors such as temperature, humidity, and light levels.</li>
+                        <li>Designed hardware modules to monitor temperature, soil moisture, and illumination.</li>
                         <li>Developed an automated control system using Arduino and PostgreSQL.</li>
                         <li>Ensured system reliability through rigorous testing and iterative improvements.</li>
                     </ul>
                 </section>
 
                 <!-- Caltech LIGO Project -->
-                <section class="project-section">
+                <section class="project-section" id="ligo">
                     <h2>Gravitational Wave Data Analysis</h2>
                     <div class="project-header">
                         <h3>California Institute of Technology</h3>
-                        <span>July - August, 2021</span>
+                        <span>2021</span>
                     </div>
-                    <p>During my summer research at Caltech, I worked on the LIGO project to analyze gravitational wave signals using Bayesian inference:</p>
+                    <p>In a Caltech undergraduate research project, I explored how to identify weak signals in public LIGO data.</p>
                     <ul>
-                        <li>Developed and fine-tuned LIGO data pipelines for merger event detection.</li>
-                        <li>Innovated a data-fitting method using the Gravitational Wave Template Bank.</li>
-                        <li>Detected over 50 potential black hole and neutron star merger events.</li>
-                        <li>Explored frequency-domain transformations to enhance signal clarity.</li>
+                        <li>Applied frequency-domain filtering, waveform-template matching, and Bayesian ranking concepts.</li>
+                        <li>Documented how the analysis workflow treated candidate signals.</li>
                     </ul>
                 </section>
 
                 <!-- 21 cm Radio Astronomy -->
-                <section class="project-section">
+                <section class="project-section" id="radio">
                     <h2>21 cm Radio Astronomy</h2>
                     <div class="project-header">
                         <h3>Princeton University</h3>
-                        <span>June - December, 2021</span>
+                        <span>2021</span>
                     </div>
                     <p>At Princeton, I investigated the Milky Way's rotational dynamics and dark matter distribution:</p>
                     <ul>
-                        <li>Mapped the Galactic differential rotation model at 1,000 light-year scales using GLON survey data.</li>
-                        <li>Published findings in the <em>Journal of Physics: Conference Series (2287 012038)</em>, confirming the existence of a dark matter halo.</li>
-                        <li>Utilized spectral decomposition techniques to examine gravitational influences.</li>
+                        <li>Processed neutral-hydrogen spectra to estimate line-of-sight velocities and construct a Milky Way rotation curve.</li>
+                        <li>Compared the observed rotation curve with models for luminous matter and a dark-matter halo.</li>
+                        <li><a href="https://doi.org/10.1088/1742-6596/2287/1/012038">Read the paper in the Journal of Physics: Conference Series</a>.</li>
                     </ul>
                 </section>
 
-            </article>
-        </div>
-
-        <!-- Footer -->
-        <footer id="footer">
-            <section>
-                <p>&copy; 2024 Ruopeng Jia. Design by <a href="https://html5up.net">HTML5 UP</a>.</p>
-            </section>
-        </footer>
-
+            <section class="project-section" id="rram">
+    <h2>Resistive Memory Reliability</h2>
+    <div class="project-header"><h3>Northern Arizona University · Semiconductor and Device Research Lab</h3><span>2022</span></div>
+    <p>I reviewed resistive-memory materials and analyzed switching and endurance measurements for more than 500 samples. I compared how ruthenium and tungsten-oxide device structures behaved over repeated cycles.</p>
+</section>
+<section class="project-section" id="uniongpt">
+    <h2>Research Software for Archival Work</h2>
+    <div class="project-header"><h3>UnionGPT · Research workflow project</h3><span>Since 2024</span></div>
+    <p>I designed a workflow for organizing source notes and archival metadata. I built evaluation cases for retrieval and traceability so researchers could inspect which materials supported a generated answer.</p>
+</section>
+</div>
+</article>
+  </main>
+  <footer class="footer">
+    <div class="shell footer-inner">
+      <span>© Ruopeng Jia · Original site based on <a href="https://html5up.net">HTML5 UP</a></span>
+      <div class="footer-links">
+        <a href="mailto:jia.ruop@northeastern.edu">Email</a>
+        <a href="https://github.com/StefanoJIA">GitHub</a>
+        <a href="https://www.linkedin.com/in/ruopeng-j/">LinkedIn</a>
+      </div>
     </div>
-
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/main.js"></script>
-
+  </footer>
 </body>
 </html>

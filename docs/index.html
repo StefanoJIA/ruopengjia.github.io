@@ -1,201 +1,87 @@
-<!DOCTYPE HTML>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <title>Ruopeng Jia - Personal Portfolio</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-    <style>
-        /* Intro section adjustment */
-        #intro {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 75vh;
-            padding: 2em 1em;
-            background: url('images/background.jpg') no-repeat center center;
-            background-size: cover;
-        }
-
-        #intro h1 {
-            font-size: 3.5em;
-            margin-bottom: 0.5em;
-            color: #ffffff;
-        }
-
-        #intro p {
-            font-size: 1.25em;
-            text-align: center;
-            color: #f0f0f0;
-        }
-
-        .scrolly {
-            margin-top: 1.5em;
-        }
-
-        .news-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 1.5em;
-        }
-
-        .news-item {
-            background: #f4f4f4;
-            padding: 1.5em;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-
-        .news-item h3 {
-            font-size: 1.2em;
-            margin-bottom: 0.5em;
-        }
-
-        .news-item p {
-            font-size: 0.9em;
-        }
-
-        .news-item a {
-            color: #007acc;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        /* Fade-in zoom animation */
-        @keyframes fadeInZoom {
-            from {
-                opacity: 0;
-                transform: scale(0.9);
-            }
-            to {
-                opacity: 1;
-                transform: scale(1);
-            }
-        }
-
-        .featured-image {
-            text-align: center;
-            animation: fadeInZoom 2s ease-out;
-            margin: 2em 0;
-        }
-
-        .featured-image img {
-            max-width: 80%;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Research, engineering projects, and personal interests of Ruopeng Jia.">
+  <title>Research and portfolio | Ruopeng Jia</title>
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="assets/css/portfolio.css?v=20261107">
 </head>
-<body class="is-preload">
-
-    <!-- Wrapper -->
-    <div id="wrapper" class="fade-in">
-
-        <!-- Intro -->
-        <div id="intro">
-            <h1>Ruopeng JIA</h1>
-            <p>
-                Master's graduate in Electrical and Computer Engineering, specializing in Electromagnetics, Plasma, and Optics.<br />
-                Passionate about bridging cutting-edge engineering with astronomy.<br />
-            </p>
-            <ul class="actions">
-                <li><a href="#main" class="button icon solid solo fa-arrow-down scrolly">Explore</a></li>
-            </ul>
-        </div>
-
-        <!-- Nav -->
-        <nav id="nav">
-            <ul class="links">
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="academic-projects.html">Academic Projects</a></li>
-                <li><a href="news.html">News</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-            </ul>
-            <ul class="icons">
-                <li><a href="https://x.com/RuopengJ" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-                <li><a href="https://www.facebook.com/profile.php?id=100076958135023" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-                <li><a href="https://www.instagram.com/_stefanoj/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-                <li><a href="https://github.com/StefanoJIA" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-                <li><a href="https://www.linkedin.com/in/ruopeng-j/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-            </ul>
-        </nav>
-
-        <!-- Main -->
-        <div id="main">
-
-            <!-- About My Work -->
-            <section>
-                <header class="major">
-                    <h2>Ruopeng JIA</h2>
-                </header>
-                <p>
-                    I am a Master's graduate in Electrical and Computer Engineering from Northeastern University, specializing in Electromagnetics, Plasma, and Optics. My current research focuses on advanced quantum optics, gravitational wave data analysis, and high-precision astronomical instrumentation. I am passionate about bridging engineering and astronomy to address the universe's most profound questions.
-                </p>
-                <p>
-                    At Northeastern University, I completed my thesis on "Engineering Supermodes of Coupled Resonator Arrays" and contributed to the LIGO-AMPLFI project at MIT, advancing real-time gravitational wave data analysis techniques. My earlier experiences include collaborations on the "Weighing the Galaxy with 21cm Hydrogen Lines" project at Princeton and working on optical instrument manufacturing in China. These efforts reflect my dedication to combining computational methods with astrophysical exploration.
-                </p>
-                <p>
-                    Beyond academics, I am an avid reader with interests in social science and history, a soccer enthusiast with over 15 years of playing experience, and a calligraphy practitioner sharing Chinese cultural heritage. 
-                </p>
-            </section>
-
-            <!-- Featured Image -->
-            <section>
-                <div class="featured-image">
-                    <img src="images/Dissertation.jpg" alt="Ruopeng Jia Presentation">
-                    <figcaption style="text-align: center; font-size: 1em; color: #666; margin-top: 0.5em;">
-                        Ruopeng Jia presenting works during the Master's Thesis Defense.
-                    </figcaption>
-                </div>
-            </section>
-
-            <!-- News -->
-            <section>
-                <header class="major">
-                    <h2>Recent News</h2>
-                </header>
-                <div class="news-grid">
-                    <div class="news-item">
-                        <h3>November 2024</h3>
-                        <p>Presented calligraphy series of a classic Chinese TV series</p>
-                        <a href="news.html">Read more</a>
-                    </div>
-                    <div class="news-item">
-                        <h3>August 2024</h3>
-                        <p>Started working with LIGO-AMPLFI team at MIT</p>
-                        <a href="news.html">Read more</a>
-                    </div>
-                    <div class="news-item">
-                        <h3>May 2024</h3>
-                        <p>Completed defense of Master's Thesis 'Engineering supermodes of coupled resonator arrays'</p>
-                        <a href="news.html">Read more</a>
-                    </div>
-                </div>
-            </section>
-
-        </div>
-
-        <!-- Footer -->
-        <footer id="footer">
-            <section>
-                <p>&copy; 2024 Ruopeng Jia. Design by <a href="https://html5up.net">HTML5 UP</a>.</p>
-            </section>
-        </footer>
-
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="masthead">
+    <div class="shell masthead-inner">
+      <a class="identity" href="index.html"><span class="monogram" aria-hidden="true">RJ</span> Ruopeng Jia</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="about.html">About</a>
+        <a href="academic-projects.html">Academic Projects</a>
+        <a href="news.html">News</a>
+        <a href="gallery.html">Gallery</a>
+      </nav>
     </div>
-
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-
+  </header>
+  <main class="shell" id="main">
+<section class="hero" aria-labelledby="home-title">
+      <div>
+        <p class="eyebrow">Electrical engineering · Scientific instrumentation</p>
+        <h1 id="home-title">Engineering for <em>better measurements.</em></h1>
+        <p class="lede">I’m Ruopeng Jia. I work across photonic devices, optical experiments, and computation to recover information from weak signals.</p>
+        <div class="actions"><a class="button" href="academic-projects.html">Explore research <span aria-hidden="true">↗</span></a><a class="text-link" href="about.html">About me</a></div>
+      </div>
+      <figure class="hero-photo">
+        <img src="images/Dissertation.jpg" width="1706" height="1279" alt="Ruopeng Jia presenting coupled ring resonator research during his master's thesis defense">
+        <figcaption>Northeastern University · Master’s thesis defense · April 2024</figcaption>
+      </figure>
+    </section>
+    <section class="section" aria-labelledby="work-title">
+      <header class="section-head"><div><p class="eyebrow">01 / Research</p><h2 id="work-title">Selected work</h2></div><a class="text-link" href="academic-projects.html">All academic projects</a></header>
+      <div class="card-grid">
+        <article class="work-card">
+          <div class="project-art" aria-hidden="true"><svg viewBox="0 0 250 80" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 13h206M22 67h206" opacity=".45"/><circle cx="66" cy="40" r="19"/><circle cx="106" cy="40" r="19"/><circle cx="146" cy="40" r="19"/><circle cx="186" cy="40" r="19"/></svg></div>
+          <p class="eyebrow">Integrated photonics</p><h3>Coupled resonator arrays</h3>
+          <p>Modeled and shaped the spectral response of coupled optical rings in my master’s thesis.</p>
+          <a class="text-link" href="academic-projects.html#photonics">Explore the thesis</a>
+        </article>
+        <article class="work-card">
+          <div class="project-art" aria-hidden="true"><svg viewBox="0 0 250 80" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 51h210" opacity=".38"/><path d="M20 51h22l5-15 5 15h18l7-24 7 24h22l8-37 8 37h29l5-18 5 18h20l5-27 5 27h39"/></svg></div>
+          <p class="eyebrow">Optical measurement</p><h3>Photon counting in the field</h3>
+          <p>Aligned and calibrated a two-kilometer outdoor optical link and measured its signal and background.</p>
+          <a class="text-link" href="academic-projects.html#quantum-link">Explore the field experiment</a>
+        </article>
+        <article class="work-card">
+          <div class="project-art" aria-hidden="true"><svg viewBox="0 0 250 80" fill="none" stroke="currentColor" stroke-width="2"><rect x="104" y="19" width="42" height="42" rx="5"/><path d="M114 28h22v24h-22zM104 27H77m27 13H63m41 13H77m69-26h27m-27 13h41m-41 13h27M114 19V9m22 10V9m-22 52v10m22-10v10"/></svg></div>
+          <p class="eyebrow">Scientific inference</p><h3>Detector waveforms on FPGA</h3>
+          <p>Validated fixed-point inference on an Arty A7 using public CUORE data. The measured model-core latency was 2.78 µs.</p>
+          <a class="text-link" href="academic-projects.html#cuore">Explore the FPGA study</a>
+        </article>
+      </div>
+    </section>
+    <section class="section split" aria-label="About and updates">
+      <div><p class="eyebrow">02 / Beyond the lab</p><h2>Science, books, and music</h2>
+        <p class="lede">I read about social science and history, play soccer, and practice Chinese calligraphy. My gallery collects books and classical recordings that have stayed with me.</p>
+        <a class="text-link" href="gallery.html">Visit the gallery</a>
+      </div>
+      <div><p class="eyebrow">03 / Timeline</p><h2>Recent updates</h2>
+        <ul class="timeline">
+          <li><time datetime="2026-11">November 2026</time><p><a href="academic-projects.html#cuore">Added FPGA validation results from my detector waveform study.</a></p></li>
+          <li><time datetime="2024-11">November 2024</time><p><a href="gallery.html#calligraphy">Shared a calligraphy series inspired by Chinese television.</a></p></li>
+          <li><time datetime="2024-07">July 2024</time><p><a href="academic-projects.html#amplfi">Began collaborating on AMPLFI parameter estimation.</a></p></li>
+        </ul>
+        <p><a class="text-link" href="news.html">All updates</a></p>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="shell footer-inner">
+      <span>© Ruopeng Jia · Original site based on <a href="https://html5up.net">HTML5 UP</a></span>
+      <div class="footer-links">
+        <a href="mailto:jia.ruop@northeastern.edu">Email</a>
+        <a href="https://github.com/StefanoJIA">GitHub</a>
+        <a href="https://www.linkedin.com/in/ruopeng-j/">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
