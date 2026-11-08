@@ -6,7 +6,7 @@
   <meta name="description" content="Photonic devices, optical measurement, FPGA inference, and other projects by Ruopeng Jia.">
   <title>Academic projects | Ruopeng Jia</title>
   <link rel="icon" href="images/favicon.ico">
-  <link rel="stylesheet" href="assets/css/portfolio.css?v=20261107">
+  <link rel="stylesheet" href="assets/css/portfolio.css?v=20261108">
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -14,138 +14,95 @@
     <div class="shell masthead-inner">
       <a class="identity" href="index.html"><span class="monogram" aria-hidden="true">RJ</span> Ruopeng Jia</a>
       <nav class="site-nav" aria-label="Main navigation">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="academic-projects.html" aria-current="page">Academic Projects</a>
-        <a href="news.html">News</a>
-        <a href="gallery.html">Gallery</a>
+        <a href="academic-projects.html" aria-current="page">Research</a>
+        <a href="about.html">Background</a>
+        <a href="index.html#contact">Contact</a>
       </nav>
     </div>
   </header>
   <main class="shell site-page" id="main">
-<article class="post">
-                <header class="page-intro">
-                    <p class="eyebrow">Research / Selected projects</p>
-                    <h1>Academic Projects</h1>
-                    <p>Selected work in integrated photonics, optical measurements, scientific inference, and instrumentation.</p>
-                </header>
-<nav class="jump-links" aria-label="Jump to a project">
-  <a href="#photonics">Photonics</a><a href="#cuore">CUORE / FPGA</a><a href="#amplfi">AMPLFI</a>
-  <a href="#quantum-link">Photon counting</a><a href="#rram">RRAM</a><a href="#uniongpt">Research software</a>
-</nav>
-<div class="project-list">
+    <header class="page-intro">
+      <p class="eyebrow">Research portfolio</p>
+      <h1>Research projects</h1>
+      <p>From designing optical devices to validating inference on hardware, these projects explore how to measure and interpret weak physical signals.</p>
+    </header>
+    <nav class="jump-links" aria-label="Jump to a research project">
+      <a href="#photonics">Photonics thesis</a>
+      <a href="#quantum-link">Photon counting</a>
+      <a href="#cuore">CUORE / FPGA</a>
+      <a href="#amplfi">AMPLFI</a>
+      <a href="#earlier">Earlier work</a>
+    </nav>
 
-                <section class="project-section" id="photonics">
-                    <h2>Engineering Supermodes of Coupled Resonator Arrays</h2>
-                    <div class="project-header">
-                        <h3>Northeastern University · M.S. Thesis</h3>
-                        <span>2024</span>
-                    </div>
-                    <p>I modeled coupled ring-resonator arrays and used Fourier-domain perturbations and numerical optimization to target spectral shifts while limiting changes to neighboring modes. The work explored spectral engineering for nonlinear photonic devices and compensation for resonator disorder in simulation.</p>
-                    <p><a href="https://meitner.coe.northeastern.edu/hyperkitty/list/ece-grad-phd%40newlists.coe.northeastern.edu/thread/K3HGSYA242PIGHRU2TMSQCLU63Y2W3QU/">Northeastern thesis defense announcement</a></p>
-                </section>
+    <section class="project-group" aria-labelledby="selected-title">
+      <h2 id="selected-title">Selected research</h2>
+      <div class="project-list">
+        <article class="project-section" id="photonics">
+          <p class="eyebrow">Northeastern University · M.S. thesis · 2024</p>
+          <h3>Engineering Supermodes of Coupled Resonator Arrays</h3>
+          <p>I modeled coupled ring-resonator arrays and used Fourier-domain perturbations and numerical optimization to target spectral shifts while limiting changes to neighboring modes. The simulations explored spectral control for nonlinear photonic devices and compensation for resonator disorder.</p>
+          <p><a class="text-link" href="https://meitner.coe.northeastern.edu/hyperkitty/list/ece-grad-phd%40newlists.coe.northeastern.edu/thread/K3HGSYA242PIGHRU2TMSQCLU63Y2W3QU/">Northeastern thesis defense announcement <span aria-hidden="true">↗</span></a></p>
+        </article>
+        <article class="project-section" id="quantum-link">
+          <p class="eyebrow">QuantumCTek · Field experiment · 2023</p>
+          <h3>Photon Counting on a Free-Space Optical Link</h3>
+          <p>I worked on calibration for a polarization-encoded quantum communication link. I aligned the optics, characterized the photon-counting signal and background, and documented the configuration and stability of a 2 km outdoor link test.</p>
+        </article>
+        <article class="project-section" id="cuore">
+          <p class="eyebrow">Independent study · Public CUORE data</p>
+          <h3>Detector Waveform Inference on FPGA</h3>
+          <p>I audited 10,000 waveform windows for exact overlap and used group-aware splits to study evaluation leakage. I tested compact classifiers under registration shifts and fixed-point quantization.</p>
+          <p>On an Arty A7-100T, a 16-bit hls4ml MLP matched C simulation bit for bit across 1,350 validation events. On-board counters measured a model-core latency of 2.78 µs.</p>
+          <ul class="metrics" aria-label="FPGA validation highlights">
+            <li>16-bit fixed point</li><li>1,350 validation events</li><li>2.78 µs model-core latency</li>
+          </ul>
+        </article>
+        <article class="project-section" id="amplfi">
+          <p class="eyebrow">Massachusetts Institute of Technology · 2024–2025</p>
+          <h3>Gravitational-Wave Parameter Estimation</h3>
+          <p>I contributed preprocessing, resampling, and parameter-constraint modules to Bilby and AMPLFI workflows and evaluated how those choices affected computation and robustness.</p>
+        </article>
+      </div>
+    </section>
 
-                <section class="project-section" id="cuore">
-                    <h2>Detector Waveform Inference on FPGA</h2>
-                    <div class="project-header">
-                        <h3>Independent study · Public CUORE data</h3>
-                        <span>Ongoing</span>
-                    </div>
-                    <p>I audited 10,000 public waveform windows for exact overlap and used group-aware splits to study evaluation leakage. I also tested compact classifiers under registration shifts and fixed-point quantization.</p>
-                    <p>A 16-bit hls4ml MLP ran on an Arty A7-100T. On-board counters measured a model-core latency of 2.78 µs, and the outputs matched C simulation bit for bit across 1,350 validation events.</p>
-                    <ul class="metrics" aria-label="FPGA validation highlights"><li>16-bit fixed point</li><li>1,350 validation events</li><li>2.78 µs model core</li></ul>
-                </section>
-
-                <!-- AMPLFI Project -->
-                <section class="project-section" id="amplfi">
-                    <h2>Gravitational-Wave Parameter Estimation</h2>
-                    <div class="project-header">
-                        <h3>Massachusetts Institute of Technology</h3>
-                        <span>July 2024 – January 2025</span>
-                    </div>
-                    <p>I collaborated on the AMPLFI project, which studies efficient inference of physical parameters from gravitational-wave signals.</p>
-                    <ul>
-                        <li>Developed preprocessing, resampling, and parameter-constraint modules for Bilby and AMPLFI workflows.</li>
-                        <li>Evaluated trade-offs among computation, parameter constraints, and model robustness.</li>
-                    </ul>
-                </section>
-
-                <!-- Quantum Key Distribution -->
-                <section class="project-section" id="quantum-link">
-                    <h2>Quantum Key Distribution Systems</h2>
-                    <div class="project-header">
-                        <h3>QuantumCTek</h3>
-                        <span>2023</span>
-                    </div>
-                    <p>At QuantumCTek, I worked on calibration and measurement for a polarization-encoded quantum communication link.</p>
-                    <ul>
-                        <li>Aligned the optics and characterized photon-counting signal and background.</li>
-                        <li>Conducted a two-kilometer outdoor link test and documented its configuration, conditions, and stability.</li>
-                    </ul>
-                </section>
-
-                <!-- Capstone Design -->
-                <section class="project-section" id="greenhouse">
-                    <h2>Greenhouse Monitoring and Control System</h2>
-                    <div class="project-header">
-                        <h3>Northern Arizona University</h3>
-                        <span>September, 2021 - May, 2022</span>
-                    </div>
-                    <p>For my capstone project, I led the design and implementation of an IoT-based greenhouse system:</p>
-                    <ul>
-                        <li>Designed hardware modules to monitor temperature, soil moisture, and illumination.</li>
-                        <li>Developed an automated control system using Arduino and PostgreSQL.</li>
-                        <li>Ensured system reliability through rigorous testing and iterative improvements.</li>
-                    </ul>
-                </section>
-
-                <!-- Caltech LIGO Project -->
-                <section class="project-section" id="ligo">
-                    <h2>Gravitational Wave Data Analysis</h2>
-                    <div class="project-header">
-                        <h3>California Institute of Technology</h3>
-                        <span>2021</span>
-                    </div>
-                    <p>In a Caltech undergraduate research project, I explored how to identify weak signals in public LIGO data.</p>
-                    <ul>
-                        <li>Applied frequency-domain filtering, waveform-template matching, and Bayesian ranking concepts.</li>
-                        <li>Documented how the analysis workflow treated candidate signals.</li>
-                    </ul>
-                </section>
-
-                <!-- 21 cm Radio Astronomy -->
-                <section class="project-section" id="radio">
-                    <h2>21 cm Radio Astronomy</h2>
-                    <div class="project-header">
-                        <h3>Princeton University</h3>
-                        <span>2021</span>
-                    </div>
-                    <p>At Princeton, I investigated the Milky Way's rotational dynamics and dark matter distribution:</p>
-                    <ul>
-                        <li>Processed neutral-hydrogen spectra to estimate line-of-sight velocities and construct a Milky Way rotation curve.</li>
-                        <li>Compared the observed rotation curve with models for luminous matter and a dark-matter halo.</li>
-                        <li><a href="https://doi.org/10.1088/1742-6596/2287/1/012038">Read the paper in the Journal of Physics: Conference Series</a>.</li>
-                    </ul>
-                </section>
-
-            <section class="project-section" id="rram">
-    <h2>Resistive Memory Reliability</h2>
-    <div class="project-header"><h3>Northern Arizona University · Semiconductor and Device Research Lab</h3><span>2022</span></div>
-    <p>I reviewed resistive-memory materials and analyzed switching and endurance measurements for more than 500 samples. I compared how ruthenium and tungsten-oxide device structures behaved over repeated cycles.</p>
-</section>
-<section class="project-section" id="uniongpt">
-    <h2>Research Software for Archival Work</h2>
-    <div class="project-header"><h3>UnionGPT · Research workflow project</h3><span>Since 2024</span></div>
-    <p>I designed a workflow for organizing source notes and archival metadata. I built evaluation cases for retrieval and traceability so researchers could inspect which materials supported a generated answer.</p>
-</section>
-</div>
-</article>
+    <section class="project-group" id="earlier" aria-labelledby="earlier-title">
+      <h2 id="earlier-title">Earlier &amp; adjacent work</h2>
+      <div class="project-list">
+        <article class="project-section" id="radio">
+          <p class="eyebrow">Radio astronomy · 2021–2022</p>
+          <h3>Milky Way Rotation from the 21 cm Hydrogen Line</h3>
+          <p>I processed neutral-hydrogen spectra to estimate line-of-sight velocities and compared the resulting rotation curve with models of luminous matter and a dark-matter halo.</p>
+          <p><a class="text-link" href="https://doi.org/10.1088/1742-6596/2287/1/012038">Read the conference paper <span aria-hidden="true">↗</span></a></p>
+        </article>
+        <article class="project-section" id="rram">
+          <p class="eyebrow">Northern Arizona University · 2022</p>
+          <h3>Resistive Memory Reliability</h3>
+          <p>I analyzed switching and endurance measurements for more than 500 samples and compared how ruthenium and tungsten-oxide structures behaved over repeated cycles.</p>
+        </article>
+        <article class="project-section" id="ligo">
+          <p class="eyebrow">Caltech undergraduate research project · 2021</p>
+          <h3>Gravitational Wave Data Analysis</h3>
+          <p>I explored how to identify weak signals in public LIGO data using frequency-domain filtering, waveform-template matching, and Bayesian ranking concepts.</p>
+        </article>
+        <article class="project-section" id="greenhouse">
+          <p class="eyebrow">Northern Arizona University · Capstone · 2021–2022</p>
+          <h3>Greenhouse Monitoring and Control System</h3>
+          <p>I led the design of an IoT system that monitored temperature, soil moisture, and illumination and automated greenhouse controls using Arduino and PostgreSQL.</p>
+        </article>
+        <article class="project-section" id="uniongpt">
+          <p class="eyebrow">UnionGPT · Research software</p>
+          <h3>Research Software for Archival Work</h3>
+          <p>I designed a workflow for organizing source notes and archival metadata, then built evaluation cases to check which materials supported generated answers.</p>
+        </article>
+      </div>
+    </section>
   </main>
   <footer class="footer">
     <div class="shell footer-inner">
       <span>© Ruopeng Jia · Original site based on <a href="https://html5up.net">HTML5 UP</a></span>
       <div class="footer-links">
-        <a href="mailto:jia.ruop@northeastern.edu">Email</a>
+        <a href="news.html">News</a>
+        <a href="gallery.html">Gallery</a>
         <a href="https://github.com/StefanoJIA">GitHub</a>
         <a href="https://www.linkedin.com/in/ruopeng-j/">LinkedIn</a>
       </div>
