@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" fill="none">
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1" gradientUnits="objectBoundingBox">
+      <stop stop-color="#f2e9d4"/><stop offset="1" stop-color="#c9ddca"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#bg)" d="M0 0h640v360H0z"/>
+  <path d="M0 241l68-36 68 40 64-23 95 42 69-27 58 19 86-52 132 52v104H0z" fill="#5e8977" fill-opacity=".18"/>
+  <path d="M0 281l88-22 100 33 92-15 69 17 91-21 102 6 98-21v102H0z" fill="#5e8977" fill-opacity=".2"/>
+  <path d="M156 184h328" stroke="#658f7c" stroke-opacity=".23" stroke-width="16"/>
+  <path d="M156 184h328" stroke="#306c56" stroke-width="2" stroke-dasharray="5 6"/>
+  <path d="M430 177l8 7-8 7" stroke="#306c56" stroke-width="2"/>
+  <circle cx="220" cy="184" r="4" fill="#b97328"/><circle cx="295" cy="184" r="4" fill="#b97328"/><circle cx="382" cy="184" r="4" fill="#b97328"/>
+  <g stroke="#244d40" stroke-width="3">
+    <path d="M78 174h58l16 10-16 10H78zM108 194v29m0-12-27 35m27-35 27 35" fill="#f4eee0"/>
+    <path d="M562 174h-58l-16 10 16 10h58zM532 194v29m0-12-27 35m27-35 27 35" fill="#f4eee0"/>
+    <path d="M126 174v20m388-20v20" stroke="#9a642d"/>
+  </g>
+  <g font-family="system-ui,sans-serif" fill="#22483b">
+    <text x="48" y="57" font-size="18" letter-spacing="3">OPTICAL MEASUREMENT</text>
+    <text x="48" y="91" font-size="28" font-weight="600">Counting photons across 2 km</text>
+    <text x="320" y="156" font-size="18" text-anchor="middle">Free-space optical link</text>
+    <text x="108" y="269" font-size="17" text-anchor="middle">Transmitter</text>
+    <text x="532" y="269" font-size="17" text-anchor="middle">Photon detector</text>
+    <text x="48" y="321" font-size="15">Field experiment · Conceptual diagram</text>
+  </g>
+</svg>

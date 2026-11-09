@@ -11,6 +11,11 @@ python -m http.server 8772 --bind 127.0.0.1 --directory docs
 Open http://127.0.0.1:8772/ to review the research portfolio, academic
 background, and contact section. The footer links to the news and gallery archives.
 
+The thesis PDF in `docs/files/` is the author's original 2024 copy.
+Its title page and Figure 1.2 are reproduced under `docs/images/research/`.
+The three SVGs are explanatory illustrations; the photon path and the
+detector pulse are schematic.
+
 GitHub Pages publishes `main:/docs` at `https://ruopengjia.com`. Keep
 `docs/CNAME` and the Pages custom domain in sync. In Alibaba Cloud DNS,
 the apex uses the [GitHub Pages A records](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#dns-records-for-your-custom-domain);
