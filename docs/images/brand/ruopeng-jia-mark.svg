@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+<title>Ruopeng Jia — RJ optical monogram</title>
+<rect width="64" height="64" rx="19" fill="#153d32"/>
+<path d="M47 9A26 26 0 1 0 56 30" fill="none" stroke="#7ea98e" stroke-width="1.5"/>
+<path d="M19 46V18h10a9 9 0 0 1 0 18H19m10 0 11 13M45 21v19q0 12-12 11" fill="none" stroke="#fffaf0" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="51" cy="13" r="3" fill="#d9b77c"/>
+</svg>

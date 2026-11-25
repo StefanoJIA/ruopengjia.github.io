@@ -9,8 +9,35 @@ python -m http.server 8772 --bind 127.0.0.1 --directory docs
 ```
 
 Open http://127.0.0.1:8772/ to review the homepage, detailed research projects,
-and academic background. The shared navigation links to Research, Writing,
-Background, and Contact. News and the gallery remain in the footer.
+and academic background. Research, Writing, Background, News, Gallery, and
+Contact are all in the main navigation.
+
+English pages live at the domain root; their complete Chinese counterparts
+live under `docs/zh/`. The language control links to the same page and preserves
+its current section. Shared images, scripts, and PDFs are served from one copy.
+
+After editing English HTML, update the corresponding entries in
+`content/zh.json`, then run:
+
+```powershell
+python scripts/build_zh.py
+python -m unittest discover -s tests -v
+```
+
+The builder uses Python's standard library and rejects missing translations.
+Commit the generated Chinese HTML alongside English changes so the existing
+GitHub Pages deployment can publish both without a new build service.
+
+The profile and homepage link to the author's selected two-page academic
+English CV, a byte-preserved copy under `docs/files/`. News dates describe
+the underlying milestones rather than when their website entries were added.
+Reading questions and listening prompts are editorial notes, not quotations.
+
+The personal mark in `docs/images/brand/ruopeng-jia-mark.svg` is an original
+RJ monogram with an open optical-ring motif. Social icons were extracted from
+the site's bundled Font Awesome Free font; icons are licensed
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) by
+[Font Awesome](https://fontawesome.com/).
 
 Content is maintained directly in the HTML files. Keep the home summaries,
 research details, and background timeline consistent when adding results.
