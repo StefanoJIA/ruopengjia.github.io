@@ -3,113 +3,108 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Ruopeng Jia’s research in integrated photonics, photon-counting instrumentation, and hardware for scientific inference.">
-  <title>Ruopeng Jia | Photonics &amp; Scientific Instrumentation</title>
+  <meta name="description" content="Ruopeng Jia’s research in integrated photonics, optical measurement, and hardware-aware scientific inference. Explore projects, a master’s thesis, and publications.">
+  <title>Photonics &amp; Scientific Instrumentation | Ruopeng Jia</title>
   <link rel="canonical" href="https://ruopengjia.com/">
   <link rel="icon" href="images/favicon.ico">
-  <link rel="stylesheet" href="assets/css/portfolio.css?v=20261108b">
+  <link rel="stylesheet" href="assets/css/portfolio.css?v=20261125">
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
   <header class="masthead">
     <div class="shell masthead-inner">
-      <a class="identity" href="index.html" aria-current="page"><span class="monogram" aria-hidden="true">RJ</span> Ruopeng Jia</a>
+      <a class="identity" href="index.html"><span class="monogram" aria-hidden="true">RJ</span><span>Ruopeng Jia<span class="identity-subtitle">Research &amp; engineering</span></span></a>
       <nav class="site-nav" aria-label="Main navigation">
         <a href="academic-projects.html">Research</a>
+        <a href="index.html#publications">Writing</a>
         <a href="about.html">Background</a>
-        <a href="#contact">Contact</a>
+        <a href="index.html#contact">Contact</a>
       </nav>
     </div>
   </header>
   <main class="shell" id="main">
     <section class="hero" aria-labelledby="home-title">
-      <div>
-        <p class="eyebrow">Electrical engineering &amp; scientific instrumentation</p>
+      <div class="hero-copy">
+        <p class="eyebrow">Electrical engineering / Research portfolio</p>
         <h1 id="home-title">Engineering for <em>better measurements.</em></h1>
-        <p class="lede">I’m Ruopeng Jia, an electrical engineer studying how photonic devices, optical experiments, and computation can recover more information from weak signals.</p>
-        <div class="actions">
-          <a class="button" href="#work">Explore selected research <span aria-hidden="true">↓</span></a>
-          <a class="text-link" href="about.html">Academic background <span aria-hidden="true">→</span></a>
-        </div>
+        <p class="lede">I’m Ruopeng Jia. I work at the intersection of photonic devices, optical measurement, and scientific computation—connecting physical signals to information we can trust.</p>
+        <div class="actions"><a class="button" href="#work">Explore my research <span aria-hidden="true">↓</span></a><a class="text-link" href="files/ruopeng-jia-ms-thesis-2024.pdf">Read my M.S. thesis <span aria-hidden="true">↗</span></a></div>
+        <p class="hero-footnote">M.S., Electrical &amp; Computer Engineering · Northeastern University</p>
       </div>
       <figure class="hero-photo">
-        <img src="images/Dissertation.jpg" width="1706" height="1279" alt="Ruopeng Jia presenting his research on coupled ring resonators">
-        <figcaption><span>Master’s thesis defense</span><span>Northeastern University · April 2024</span></figcaption>
+        <img src="images/Dissertation.jpg" width="1706" height="1279" alt="Ruopeng Jia presenting coupled ring resonator research at his master’s thesis defense" fetchpriority="high">
+        <figcaption><span>From the thesis defense</span><span>Northeastern University · April 2024</span></figcaption>
       </figure>
+    </section>
+    <div class="research-strip" aria-label="Areas of research">
+      <a href="academic-projects.html#photonics"><span class="strip-index">01</span><span><strong>Shape the device</strong><span>Integrated photonics &amp; resonators</span></span><span aria-hidden="true">↗</span></a>
+      <a href="academic-projects.html#quantum-link"><span class="strip-index">02</span><span><strong>Understand the signal</strong><span>Photon counting &amp; calibration</span></span><span aria-hidden="true">↗</span></a>
+      <a href="academic-projects.html#cuore"><span class="strip-index">03</span><span><strong>Validate the inference</strong><span>Waveforms &amp; hardware implementation</span></span><span aria-hidden="true">↗</span></a>
+    </div>
+
+    <section class="section editorial-intro" aria-labelledby="perspective-title">
+      <div><p class="eyebrow">A research perspective</p><h2 id="perspective-title">From the device<br>to the decision.</h2></div>
+      <div class="intro-copy"><p>A useful measurement depends on more than one component. The device shapes the response, the experiment sets the noise and calibration conditions, and the analysis determines which conclusions the signal can support.</p><p>My work follows that chain: modeling coupled optical resonators, aligning photon-counting experiments, and testing compact inference models on real detector waveforms. I am interested in instruments whose physical behavior and computational limits can be studied together.</p><a class="text-link" href="about.html">More about my background <span aria-hidden="true">→</span></a></div>
     </section>
 
     <section class="section" id="work" aria-labelledby="work-title">
-      <header class="section-head">
-        <div><p class="eyebrow">01 / Research portfolio</p><h2 id="work-title">Selected research</h2></div>
-        <a class="text-link" href="academic-projects.html">All research projects <span aria-hidden="true">→</span></a>
-      </header>
-      <div class="card-grid">
-        <article class="work-card">
-          <img class="project-art" src="images/research/resonator-array.svg" width="640" height="360" alt="Schematic of the thesis’s ten-ring resonator chain, from the optical input to the drop port" loading="lazy">
-          <p class="eyebrow">Integrated photonics · M.S. thesis</p>
-          <h3>Coupled resonator arrays</h3>
-          <p>Used numerical optimization to shift selected optical resonances while limiting changes to neighboring modes.</p>
-          <a class="text-link" href="academic-projects.html#photonics">Read about the thesis <span aria-hidden="true">→</span></a>
-        </article>
-        <article class="work-card">
-          <img class="project-art" src="images/research/photon-link.svg" width="640" height="360" alt="Conceptual diagram of a free-space transmitter and photon detector separated by two kilometers" loading="lazy">
-          <p class="eyebrow">Optical measurement · Field experiment</p>
-          <h3>Photon counting in the field</h3>
-          <p>Aligned and calibrated a 2 km outdoor optical link and characterized its photon-counting signal and background.</p>
-          <a class="text-link" href="academic-projects.html#quantum-link">See the field experiment <span aria-hidden="true">→</span></a>
-        </article>
-        <article class="work-card">
-          <img class="project-art" src="images/research/fpga-inference.svg" width="640" height="360" alt="Illustrated detector pulse feeding a 16-bit model on an Arty A7 FPGA, with 2.78 microseconds of measured model-core latency" loading="lazy">
-          <p class="eyebrow">Scientific inference · Independent study</p>
-          <h3>Detector waveforms on FPGA</h3>
-          <p>Validated fixed-point inference on an Arty A7 using public CUORE data and measured 2.78 µs of model-core latency.</p>
-          <a class="text-link" href="academic-projects.html#cuore">See the FPGA validation <span aria-hidden="true">→</span></a>
-        </article>
-      </div>
-    </section>
-
-    <section class="section publication" id="publications" aria-labelledby="publication-title">
-      <div><p class="eyebrow">02 / Research writing</p><h2 id="publication-title">Thesis &amp; paper</h2></div>
-      <div class="publication-list">
-        <article class="publication-entry thesis-entry">
-          <img class="thesis-cover" src="images/research/thesis-cover.webp" width="417" height="590" alt="" loading="lazy">
-          <div>
-            <p class="eyebrow">M.S. thesis · Northeastern University · 2024</p>
-            <h3>Engineering Supermodes of Coupled Resonator Arrays</h3>
-            <p>Ruopeng Jia · Electrical and Computer Engineering</p>
-            <a class="text-link" href="files/ruopeng-jia-ms-thesis-2024.pdf">Read the full thesis <span aria-hidden="true">↗</span></a>
-            <span class="file-detail">PDF · 68 pages · 12.9 MB</span>
-          </div>
-        </article>
-        <article class="publication-entry">
-          <p class="eyebrow">Radio astronomy · 2022</p>
-          <h3>Research on the Galaxy Rotation Model based on 21 cm Hydrogen Spectrum</h3>
-          <p>Ruopeng Jia · <cite>Journal of Physics: Conference Series</cite> 2287, 012038</p>
-          <a class="text-link" href="https://doi.org/10.1088/1742-6596/2287/1/012038">Read the paper <span aria-hidden="true">↗</span></a>
-        </article>
-      </div>
-    </section>
-
-    <section class="section" id="contact" aria-labelledby="contact-title">
-      <div class="contact-panel">
-        <div>
-          <p class="eyebrow">03 / Contact</p>
-          <h2 id="contact-title">Let’s talk research.</h2>
-          <p>For research inquiries, collaboration, or to arrange a meeting, please reach out by email.</p>
+      <header class="section-head"><div><p class="eyebrow">01 / Selected research</p><h2 id="work-title">Devices. Experiments. Inference.</h2></div><a class="text-link" href="academic-projects.html">All research projects <span aria-hidden="true">→</span></a></header>
+      <article class="featured-research">
+        <div class="feature-copy">
+          <p class="eyebrow">Integrated photonics · M.S. thesis · 2024</p>
+          <h3>Engineering the spectrum<br>of coupled resonators</h3>
+          <p>How can a small change to a resonator array shift selected optical modes while leaving neighboring modes close to their original frequencies?</p>
+          <p>I explored this question through coupled-mode models, Fourier-domain perturbations, and numerical optimization. The thesis connects array geometry and symmetry to the spectrum available for photonic applications.</p>
+          <ul class="tags" aria-label="Thesis methods"><li>Coupled-mode modeling</li><li>Spectral control</li><li>Numerical optimization</li></ul>
+          <a class="text-link" href="academic-projects.html#photonics">Explore the thesis project <span aria-hidden="true">→</span></a>
         </div>
-        <a class="button" href="mailto:jia.ruop@northeastern.edu">Email Ruopeng <span aria-hidden="true">↗</span></a>
+        <figure class="feature-figure">
+          <img src="images/research/resonator-thesis-figure.png" width="1278" height="1088" alt="A ten-ring resonator chain with the simulated transmission spectrum and a magnified band of supermodes" loading="lazy">
+          <figcaption>Inside the thesis · A ten-ring chain and its simulated drop-port spectrum.</figcaption>
+        </figure>
+      </article>
+      <div class="research-pair">
+        <article class="work-card">
+          <figure class="card-figure"><img class="project-art" src="images/research/photon-link.svg" width="640" height="360" alt="Conceptual illustration of a two-kilometer free-space photon-counting link" loading="lazy"><figcaption>A conceptual view of the outdoor optical link.</figcaption></figure>
+          <div class="work-copy"><p class="eyebrow">Optical measurement · QuantumCTek · 2023</p><h3>Photon counting outside the lab</h3><p>I aligned and calibrated a 2 km outdoor optical link, measured signal and background counts, and documented the conditions behind its field performance.</p><a class="text-link" href="academic-projects.html#quantum-link">Explore the field experiment <span aria-hidden="true">→</span></a></div>
+        </article>
+        <article class="work-card">
+          <figure class="card-figure"><img class="project-art" src="images/research/cuore-real-waveforms.png" width="1440" height="960" alt="Real public CUORE data showing a clean pulse and a pile-up window with several pulses" loading="lazy"><figcaption>My plot of <a href="https://doi.org/10.5281/zenodo.20721645">Sharma &amp; Alfonso’s public CUORE data</a> · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</figcaption></figure>
+          <div class="work-copy"><p class="eyebrow">Scientific inference · Independent study · 2026</p><h3>From detector waveforms to FPGA</h3><p>I studied data dependence, robustness, and fixed-point implementation. All 1,350 board validation scores matched the HLS C reference; system-level comparisons clarified where faster arithmetic does and does not help.</p><a class="text-link" href="academic-projects.html#cuore">Explore the measured results <span aria-hidden="true">→</span></a></div>
+        </article>
       </div>
+    </section>
+
+    <section class="section writing-section" id="publications" aria-labelledby="publication-title">
+      <header class="section-head"><div><p class="eyebrow">02 / Research writing</p><h2 id="publication-title">Thesis &amp; publication</h2></div><p class="section-note">Full texts, with context.</p></header>
+      <article class="writing-entry">
+        <div class="writing-index"><span class="eyebrow">Master’s thesis</span><span>2024</span></div>
+        <div class="writing-copy"><h3>Engineering Supermodes of Coupled Resonator Arrays</h3><p>Ruopeng Jia · Northeastern University</p><p class="muted">An exploration of supermode spectra in one- and two-dimensional arrays, the role of boundary conditions, and numerical approaches to spectral engineering.</p><div class="actions"><a class="text-link" href="files/ruopeng-jia-ms-thesis-2024.pdf">Read the full thesis <span aria-hidden="true">↗</span></a><span class="file-detail">PDF · 68 pages · 12.9 MB</span></div></div>
+        <img class="thesis-cover" src="images/research/thesis-cover.webp" width="417" height="590" alt="Title page of Ruopeng Jia’s master’s thesis" loading="lazy">
+      </article>
+      <article class="writing-entry">
+        <div class="writing-index"><span class="eyebrow">Conference paper</span><span>2022</span></div>
+        <div class="writing-copy"><h3>Research on the Galaxy Rotation Model based on 21 cm Hydrogen Spectrum</h3><p>Ruopeng Jia · <cite>Journal of Physics: Conference Series</cite> 2287, 012038</p><p class="muted">Using neutral-hydrogen spectra to construct a Galactic rotation curve and compare the contributions of luminous matter and a dark-matter halo.</p><a class="text-link" href="https://doi.org/10.1088/1742-6596/2287/1/012038">Read the published paper <span aria-hidden="true">↗</span></a></div>
+        <span class="paper-mark" aria-hidden="true">21<span>cm</span></span>
+      </article>
+    </section>
+
+    <section class="section path-section" aria-labelledby="path-title">
+      <div><p class="eyebrow">03 / The path so far</p><h2 id="path-title">A common thread:<br><em>weak signals.</em></h2><p>From astronomy to optical devices and detector readout, I keep returning to the same question: what information can an instrument recover, and how do we know it is reliable?</p><a class="text-link" href="about.html#experience">Academic &amp; research background <span aria-hidden="true">→</span></a></div>
+      <ol class="timeline">
+        <li><span class="timeline-year">2026</span><div><h3>Hardware-aware scientific inference</h3><p>Public detector data, compact classifiers, and a measured FPGA implementation.</p></div></li>
+        <li><span class="timeline-year">2024–25</span><div><h3>From optical modes to waveform inference</h3><p>A master’s thesis in photonics, followed by contributions to AMPLFI gravitational-wave inference workflows.</p></div></li>
+        <li><span class="timeline-year">2021–23</span><div><h3>Signals, devices, and experiments</h3><p>Radio astronomy, public LIGO data, semiconductor memory measurements, and photon-counting calibration.</p></div></li>
+      </ol>
+    </section>
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="contact-panel"><div><p class="eyebrow">04 / Get in touch</p><h2 id="contact-title">Let’s talk research.</h2><p>I welcome conversations about photonics, scientific instrumentation, and reliable inference. To discuss a project or arrange a meeting, please email me.</p><a class="contact-address" href="mailto:jia.ruop@northeastern.edu">jia.ruop@northeastern.edu</a></div><a class="button" href="mailto:jia.ruop@northeastern.edu">Start a conversation <span aria-hidden="true">↗</span></a></div>
     </section>
   </main>
   <footer class="footer">
     <div class="shell footer-inner">
-      <span>© Ruopeng Jia · Original site based on <a href="https://html5up.net">HTML5 UP</a></span>
-      <div class="footer-links">
-        <a href="news.html">News</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="https://github.com/StefanoJIA">GitHub</a>
-        <a href="https://www.linkedin.com/in/ruopeng-j/">LinkedIn</a>
-      </div>
+      <div><a class="footer-name" href="index.html">Ruopeng Jia</a><p>Photonics · Scientific instrumentation · Inference</p><small>© Ruopeng Jia · Original site based on <a href="https://html5up.net">HTML5 UP</a></small></div>
+      <div class="footer-links"><a href="news.html">News</a><a href="gallery.html">Outside the lab</a><a href="https://github.com/StefanoJIA">GitHub</a><a href="https://www.linkedin.com/in/ruopeng-j/">LinkedIn</a></div>
     </div>
   </footer>
 </body>
