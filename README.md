@@ -33,6 +33,22 @@ English CV, a byte-preserved copy under `docs/files/`. News dates describe
 the underlying milestones rather than when their website entries were added.
 Reading questions and listening prompts are editorial notes, not quotations.
 
+The three calligraphy photographs under `docs/images/gallery/` were retrieved
+from the author's [public Imgur album](https://imgur.com/gallery/SfmdMg0), linked
+from his own public LinkedIn post. The album is dated March 29, 2023. This date
+belongs to that album; the separate November 2024 update remains a later sharing
+milestone. Images retain the complete photographed frame. Gallery captions and
+the March 2023 News entry are available in both languages.
+
+Typography uses local WOFF2 subsets of Inter, Source Serif 4, Noto Sans SC, and
+Noto Serif SC from [Google Fonts](https://github.com/google/fonts). Their SIL
+Open Font License notices live alongside them in `docs/assets/fonts/`.
+The browser loads them from the site, with `font-display: swap` and system
+fallbacks. Chinese body and heading subsets cover the site's current text.
+After adding Chinese characters, regenerate Chinese pages first, then refresh
+the subsets with `python scripts/subset_fonts.py` (requires `fonttools[woff]`,
+`brotli`, and `beautifulsoup4`). English HTML remains the source for both editions.
+
 The personal mark in `docs/images/brand/ruopeng-jia-mark.svg` is an original
 RJ monogram with an open optical-ring motif. Social icons were extracted from
 the site's bundled Font Awesome Free font; icons are licensed
