@@ -64,7 +64,7 @@ class SiteTests(unittest.TestCase):
                         self.assertIn(unquote(url.fragment), self.documents[target].ids)
 
     def test_language_pairs(self):
-        self.assertEqual(len(self.pages), 20)
+        self.assertEqual(len(self.pages), 22)
         for page, doc in self.documents.items():
             relative = page.relative_to(ROOT.resolve())
             chinese = relative.parts[0] == "zh"
@@ -87,6 +87,13 @@ class SiteTests(unittest.TestCase):
                 if not urlsplit(href).scheme
             }
             self.assertIn(cv.resolve(), targets, relative)
+
+    def test_teaching_is_reachable_from_every_page(self):
+        for page, doc in self.documents.items():
+            chinese = page.relative_to(ROOT.resolve()).parts[0] == "zh"
+            target = (ROOT / ("zh" if chinese else "") / "teaching.html").resolve()
+            links = {self.resolve(page, href) for href in doc.references if not urlsplit(href).scheme}
+            self.assertIn(target, links, page)
 
 
 if __name__ == "__main__":

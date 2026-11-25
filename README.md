@@ -9,7 +9,7 @@ python -m http.server 8772 --bind 127.0.0.1 --directory docs
 ```
 
 Open http://127.0.0.1:8772/ to review the homepage, detailed research projects,
-and academic background. Research, Writing, Background, News, Gallery, and
+and academic background. Research, Writing, About, Teaching, News, Gallery, and
 Contact are all in the main navigation.
 
 English pages live at the domain root; their complete Chinese counterparts
@@ -50,14 +50,15 @@ the subsets with `python scripts/subset_fonts.py` (requires `fonttools[woff]`,
 `brotli`, and `beautifulsoup4`). English HTML remains the source for both editions.
 
 The personal mark in `docs/images/brand/ruopeng-jia-mark.svg` is an original
-RJ monogram with an open optical-ring motif. Social icons were extracted from
+single-color RJ monogram drawn as two simple, connected waveguide-like paths.
+It has no enclosing badge, decorative ring, or accent dot. Social icons were extracted from
 the site's bundled Font Awesome Free font; icons are licensed
 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) by
 [Font Awesome](https://fontawesome.com/).
 
 Content is maintained directly in the HTML files. Keep the home summaries,
 research details, and background timeline consistent when adding results.
-Styles are shared by all ten current pages; bump the stylesheet query version
+Styles are shared by all eleven English pages and their Chinese counterparts; bump the stylesheet query version
 across the main pages and gallery archives when changing it.
 
 The thesis PDF in `docs/files/` is the author's original 2024 copy.
@@ -85,3 +86,13 @@ feed of explicitly published meeting slots there. Keep the workbench and its
 calendar APIs behind authentication. The public feed should expose only slot
 start and end times with time zones, without event details or credentials.
 Keep email available when there are no slots or the service is unavailable.
+
+The teaching page (`teaching.html`, with its Chinese counterpart) summarizes
+individual undergraduate EE/ECE support through HD/Haidao Education and NewEDU.
+Its scope and case descriptions were checked against the author's private
+2024–2026 teaching archive: tutor-labelled lecture slides, instructor MATLAB
+demonstrations, lesson notes, FPGA interface examples, and power-system models.
+The page distinguishes teaching focus and learning goals from measured outcomes.
+No student names, grades, course submissions, private records, or third-party
+lecture/exam files are published. NewEDU follows the spelling in the archive
+and its existing website project. Source documents remain outside this repo.
