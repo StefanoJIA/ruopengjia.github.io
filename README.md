@@ -50,7 +50,9 @@ the subsets with `python scripts/subset_fonts.py` (requires `fonttools[woff]`,
 `brotli`, and `beautifulsoup4`). English HTML remains the source for both editions.
 
 The personal mark in `docs/images/brand/ruopeng-jia-mark.svg` is an original
-single-color RJ monogram drawn as two simple, connected waveguide-like paths.
+single-color abstract RJ mark drawn as two open paths with rounded turns and a consistent stroke.
+The upper return loop and diagonal lower return retain the R/J gestures; a small
+negative-space gap separates the paths, suggesting coupled optical waveguides.
 It has no enclosing badge, decorative ring, or accent dot. Social icons were extracted from
 the site's bundled Font Awesome Free font; icons are licensed
 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) by
@@ -88,7 +90,7 @@ start and end times with time zones, without event details or credentials.
 Keep email available when there are no slots or the service is unavailable.
 
 The teaching page (`teaching.html`, with its Chinese counterpart) summarizes
-individual undergraduate EE/ECE support through HD/Haidao Education and NewEDU.
+individual undergraduate EE/ECE support through HD/Haidao Education (海道教育) and NewEDU.
 Its scope and case descriptions were checked against the author's private
 2024–2026 teaching archive: tutor-labelled lecture slides, instructor MATLAB
 demonstrations, lesson notes, FPGA interface examples, and power-system models.

@@ -1,8 +1,8 @@
 @font-face { font-family: "Inter"; src: url("../fonts/inter-latin.woff2") format("woff2"); font-style: normal; font-weight: 100 900; font-display: swap; }
 @font-face { font-family: "Source Serif 4"; src: url("../fonts/source-serif-latin.woff2") format("woff2"); font-style: normal; font-weight: 200 900; font-display: swap; }
 @font-face { font-family: "Source Serif 4"; src: url("../fonts/source-serif-italic-latin.woff2") format("woff2"); font-style: italic; font-weight: 200 900; font-display: swap; }
-@font-face { font-family: "Noto Sans SC"; src: url("../fonts/noto-sans-sc-site.woff2?v=20261125d") format("woff2"); font-style: normal; font-weight: 100 900; font-display: swap; unicode-range: U+2E80-9FFF, U+F900-FAFF, U+FF00-FFEF; }
-@font-face { font-family: "Noto Serif SC"; src: url("../fonts/noto-serif-sc-headings.woff2?v=20261125d") format("woff2"); font-style: normal; font-weight: 200 900; font-display: swap; unicode-range: U+2E80-9FFF, U+F900-FAFF, U+FF00-FFEF; }
+@font-face { font-family: "Noto Sans SC"; src: url("../fonts/noto-sans-sc-site.woff2?v=20261125e") format("woff2"); font-style: normal; font-weight: 100 900; font-display: swap; unicode-range: U+2E80-9FFF, U+F900-FAFF, U+FF00-FFEF; }
+@font-face { font-family: "Noto Serif SC"; src: url("../fonts/noto-serif-sc-headings.woff2?v=20261125e") format("woff2"); font-style: normal; font-weight: 200 900; font-display: swap; unicode-range: U+2E80-9FFF, U+F900-FAFF, U+FF00-FFEF; }
 
 :root {
   color-scheme: light;
